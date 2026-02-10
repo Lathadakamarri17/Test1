@@ -1,15 +1,20 @@
 Feature:Test login functionality
-Scenario Outline:check
+Scenario Outline:check login is successful with
+
 Given browser is open
-And  user is on navigate to  google search 
-When user enters <username>and<password>
-Then user is navigate to homepage
+And  user is on  google search page with user
+When user enters <username> and <password>
+And user clicks on login
+Then user is navigate to home page
 
 
 Examples:
-|username||password|
-|Lalli||9966976|
-|pilli||733110|
-|standar
+
+|username|password|
+|standard_user|secret_sauce|
+|locked_out_user|secret_sauce|
+|Latha|12345|
+
+
 
 

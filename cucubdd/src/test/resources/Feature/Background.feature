@@ -13,4 +13,4 @@ Then user should ba able to login successfully and new page open
 Scenario:Lgin with blank username
 
 When User enters username as "" and password as "admin123"
-Then User shouls be able to see a message "Required" below usename
+Then User should not be able to  login
