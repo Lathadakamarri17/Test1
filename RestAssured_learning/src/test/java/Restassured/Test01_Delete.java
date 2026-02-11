@@ -9,6 +9,7 @@ public class Test01_Delete {
 	@Test
 	public void test_delete() {
 		JSONObject request1= new JSONObject();
+		
 		request1.put("name","Latha");
 		request1.put("Job","Trainee");
 		
