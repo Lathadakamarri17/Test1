@@ -1,0 +1,23 @@
+const arr = [1,2,3,4,5]
+console.log("Original array:", arr);
+
+
+const newArr = [5,6,arr[0],[1,[3]]];
+console.log("New array (before spread operator):", newArr);
+
+const newArr1 = [5,6,...arr];
+console.log("New array(after spread operator):",newArr);
+
+
+
+//ex1
+const arr1=[1,2,3];
+const arr2= [4,5,6];
+const combined = [...arr1, ...arr2];
+  
+function sum(a,b,c) {
+    return a+b+c;
+}
+const nums = [1,2,3];
+const result = sum(...nums);
+console.log("Result of sum:", result);

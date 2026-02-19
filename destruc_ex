@@ -1,0 +1,19 @@
+function greet(message, ...name) {
+    console.log(message);
+    console.log(name);
+}
+ greet('Hello','Latha', 'Gaya','lucky');
+
+ const user = { 
+    name:'Latha',
+    role:'tester',
+    experience:5,
+    location:'india'
+
+ };
+ const{ name,role,...otherDetails} = user;
+
+
+ console.log(name);
+ console.log(role);
+ console.log(otherDetails);
